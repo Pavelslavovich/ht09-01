@@ -3,7 +3,7 @@
 #include <errno.h>
 #include <string.h>
 #include <stdlib.h>
-
+//test1
 double
 next(RandomSource *rs)
 {
