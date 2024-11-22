@@ -2,7 +2,7 @@
 #include <errno.h>
 #include <stdlib.h>
 #include <stdio.h>
-
+//dfgfgf
 enum
 {
     a = 1103515245,
