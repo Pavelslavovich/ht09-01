@@ -4,7 +4,7 @@ CFLAGS = -Wall -O2
 LDFLAGS = -g
 all : printrandom
 printrandom : mtwister.o mt.o linear.o main.o
-	$(CC) $(CFLAGS) mtwister.o mt.o linear.o main.o -o main $(LDFLAGS) -rdynamic
+	$(CC) $(CFLAGS) mtwister.o mt.o linear.o main.o -o printrandom $(LDFLAGS) -rdynamic
 main.o : main.c
 	$(CC) $(CFLAGS) -c main.c
 mtwister.o : mtwister.c 
