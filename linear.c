@@ -18,8 +18,6 @@ next_lin(RandomSource *rs)
     return (double) new / (double) mod;
 }
 
-
-
 RandomSource *
 destroy_lin(RandomSource *src)
 {
@@ -43,7 +41,7 @@ random_linear_factory(char *seed)
     result->ops = malloc(sizeof(*result->ops));
     result->ops->next = next_lin;
     result->ops->destroy = destroy_lin;
-    
+
     result->data = malloc(sizeof(result_seed));
     if (result->data == NULL) {
         free(result);
@@ -54,4 +52,3 @@ random_linear_factory(char *seed)
     *((unsigned long long *) result->data) = (result_seed << 1) >> 1;
     return result;
 }
-
